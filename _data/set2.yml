@@ -1,0 +1,30 @@
+title: "Mock Final - Set B (Algorithms)"
+mcq:
+  - id: 1
+    category: "Philosophy of AI"
+    question: "Who is considered the 'Father of AI' and defined it as a mechanical system performing actions deemed intelligent in 1956?"
+    options: ["A) Alan Turing", "B) Elaine Rich", "C) John McCarthy", "D) Azizi Ab Aziz"]
+    answer: "C"
+  - id: 2
+    category: "Python"
+    question: "Which library is primarily used for numerical computation and handling arrays?"
+    options: ["A) Pandas", "B) Matplotlib", "C) NumPy", "D) Seaborn"]
+    answer: "C"
+  - id: 3
+    category: "Naive Bayes"
+    question: "What is the core assumption that makes the Naive Bayes classifier 'naive'?"
+    options: ["A) Small dataset", "B) Independent predictors", "C) Linear pattern", "D) No outliers"]
+    answer: "B"
+  - id: 4
+    category: "Neural Networks"
+    question: "Which component determines whether a neuron should fire or produce an output?"
+    options: ["A) Input layer", "B) Activation function", "C) Training data", "D) Bias weight"]
+    answer: "B"
+  - id: 5
+    category: "Backpropagation"
+    question: "The Error in backpropagation is calculated at which layer?"
+    options: ["A) Input layer", "B) Hidden layer", "C) Output layer", "D) Every layer"]
+    answer: "C"
+subjective:
+  - question: "Describe the 'Zero Frequency' problem in Naive Bayes and how to fix it."
+    answer: "It happens when a feature in the test set wasn't seen in training (0 probability). Fixed by Laplace Smoothing (adding 1 to counts)."
