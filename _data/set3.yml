@@ -1,0 +1,30 @@
+title: "Mock Final - Set C (Deep Learning)"
+mcq:
+  - id: 1
+    category: "ANN"
+    question: "Artificial Neural Networks (ANNs) are primarily inspired by:"
+    options: ["A) Hardware", "B) Biological learning processes", "C) Regression", "D) Decision Trees"]
+    answer: "B"
+  - id: 2
+    category: "Backpropagation"
+    question: "Which mathematical rule is the foundation of the backpropagation algorithm for calculating gradients?"
+    options: ["A) Power Rule", "B) Chain Rule", "C) Quotient Rule", "D) Product Rule"]
+    answer: "B"
+  - id: 3
+    category: "K-Means"
+    question: "The Elbow Method is a technique used to:"
+    options: ["A) Calculate distance", "B) Determine optimal K", "C) Identify outliers", "D) Visualize 3D"]
+    answer: "B"
+  - id: 4
+    category: "NLP"
+    question: "Words like 'the', 'is', and 'and' that are often removed during preprocessing are called:"
+    options: ["A) Tokens", "B) Stop words", "C) Keywords", "D) Entities"]
+    answer: "B"
+  - id: 5
+    category: "Bayes"
+    question: "Bayesian probability is primarily about:"
+    options: ["A) Counting frequency", "B) Updating probability with new evidence", "C) Calculating mean", "D) Hard-coding rules"]
+    answer: "B"
+subjective:
+  - question: "Why is a Hidden Layer considered essential in modern Neural Networks?"
+    answer: "Hidden layers allow the network to learn complex, non-linear relationships. Without them, it can only solve simple linear problems."
