@@ -6,59 +6,135 @@ layout: null
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.data.questions.title }}</title>
+    <title>Intelligent Systems Exam</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Hide all quiz sets by default */
+        .quiz-set { display: none; }
+        .category-tag {
+            display: inline-block;
+            background: #e1f5fe;
+            color: #0288d1;
+            font-size: 0.85em;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
 <div class="container">
-    <header>
-        <h1>{{ site.data.questions.title }}</h1>
-        <p>Test your knowledge.</p>
-    </header>
+    
+    {% assign quiz_files = "set1,set2,set3" | split: "," %}
 
-    <form id="quiz-form">
-        <section class="mcq-section">
-            <h2>Part 1: Multiple Choice</h2>
-            {% for item in site.data.questions.mcq %}
-            <div class="question-block" id="q{{ item.id }}">
-                <p class="question-text"><strong>{{ item.id }}. {{ item.question }}</strong></p>
-                <div class="options">
-                    {% for option in item.options %}
-                    {% assign letter = option | slice: 0, 1 %}
-                    <label>
-                        <input type="radio" name="q{{ item.id }}" value="{{ letter }}">
-                        {{ option }}
-                    </label><br>
+    {% for file_name in quiz_files %}
+        {% assign current_quiz = site.data[file_name] %}
+        
+        <div id="set-{{ file_name }}" class="quiz-set">
+            <header>
+                <h1>{{ current_quiz.title }}</h1>
+                <p>Randomly selected from the question bank.</p>
+                <button onclick="window.location.reload()" style="background:#555; margin-top:5px;">Load Different Set</button>
+            </header>
+
+            <form class="quiz-form">
+                <section class="mcq-section">
+                    <h2>Part 1: Multiple Choice</h2>
+                    {% for item in current_quiz.mcq %}
+                    <div class="question-block" id="{{ file_name }}-q{{ item.id }}">
+                        <div class="category-tag">{{ item.category }}</div>
+                        <p class="question-text"><strong>{{ forloop.index }}. {{ item.question }}</strong></p>
+                        <div class="options">
+                            {% for option in item.options %}
+                            {% assign letter = option | slice: 0, 1 %}
+                            <label>
+                                <input type="radio" name="{{ file_name }}-q{{ item.id }}" value="{{ letter }}">
+                                {{ option }}
+                            </label><br>
+                            {% endfor %}
+                        </div>
+                        <div class="feedback" data-correct="{{ item.answer }}" style="display:none;"></div>
+                    </div>
                     {% endfor %}
-                </div>
-                <div class="feedback" data-correct="{{ item.answer }}" style="display:none;"></div>
-            </div>
-            {% endfor %}
-        </section>
+                </section>
 
-        <button type="button" id="submit-btn" onclick="gradeQuiz()">Submit MCQ Answers</button>
-        <div id="score-display"></div>
+                <button type="button" class="submit-btn" onclick="gradeQuiz('set-{{ file_name }}')">Submit Answers</button>
+                <div class="score-display"></div>
 
-        <hr>
+                <hr>
 
-        <section class="subjective-section">
-            <h2>Part 2: Subjective Questions</h2>
-            <p><em>Think about your answer, then click "Reveal Answer" to check.</em></p>
-            
-            {% for item in site.data.questions.subjective %}
-            <div class="question-block subjective">
-                <p class="question-text"><strong>Q: {{ item.question }}</strong></p>
-                <button type="button" class="reveal-btn" onclick="this.nextElementSibling.style.display='block'">Reveal Answer</button>
-                <div class="answer-text" style="display:none;">
-                    <p><strong>Answer:</strong> {{ item.answer }}</p>
-                </div>
-            </div>
-            {% endfor %}
-        </section>
-    </form>
+                <section class="subjective-section">
+                    <h2>Part 2: Subjective Questions</h2>
+                    {% for item in current_quiz.subjective %}
+                    <div class="question-block subjective">
+                        <p class="question-text"><strong>Q: {{ item.question }}</strong></p>
+                        <button type="button" class="reveal-btn" onclick="this.nextElementSibling.style.display='block'">Reveal Answer</button>
+                        <div class="answer-text" style="display:none;">
+                            <p><strong>Answer:</strong> {{ item.answer }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </section>
+            </form>
+        </div>
+    {% endfor %}
+
 </div>
 
-<script src="assets/js/quiz.js"></script>
+<script>
+    // 1. RANDOMIZER LOGIC
+    // This runs immediately when the page loads
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get all elements with class "quiz-set"
+        const sets = document.querySelectorAll('.quiz-set');
+        
+        // Pick a random number between 0 and sets.length - 1
+        const randomIndex = Math.floor(Math.random() * sets.length);
+        
+        // Show the chosen set
+        sets[randomIndex].style.display = 'block';
+    });
+
+    // 2. GRADING LOGIC (Updated to handle multiple sets)
+    function gradeQuiz(containerId) {
+        let score = 0;
+        let total = 0;
+        
+        // Only select questions inside the currently visible container
+        const container = document.getElementById(containerId);
+        const questions = container.querySelectorAll('.mcq-section .question-block');
+        const resultDiv = container.querySelector('.score-display');
+
+        questions.forEach((block) => {
+            total++;
+            const feedback = block.querySelector('.feedback');
+            const correctAnswer = feedback.getAttribute('data-correct');
+            const selected = block.querySelector('input[type="radio"]:checked');
+
+            feedback.style.display = 'block';
+            feedback.className = 'feedback'; // reset classes
+
+            if (selected) {
+                if (selected.value === correctAnswer) {
+                    score++;
+                    feedback.textContent = "Correct!";
+                    feedback.classList.add('correct');
+                } else {
+                    feedback.textContent = "Incorrect. The correct answer was " + correctAnswer + ".";
+                    feedback.classList.add('incorrect');
+                }
+            } else {
+                feedback.textContent = "Skipped. Correct answer: " + correctAnswer;
+                feedback.classList.add('incorrect');
+            }
+        });
+
+        resultDiv.innerHTML = `<h3>You scored ${score} out of ${total}</h3>`;
+        resultDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
 </body>
 </html>
