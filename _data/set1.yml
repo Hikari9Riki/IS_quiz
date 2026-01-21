@@ -1,0 +1,30 @@
+title: "Mock Final - Set A (Fundamentals)"
+mcq:
+  - id: 1
+    category: "Philosophy of AI"
+    question: "Which approach to AI focuses on machines that can fool humans into thinking they are human through conversation and behavior?"
+    options: ["A) Thinking Humanly", "B) Thinking Rationally", "C) Acting Humanly", "D) Acting Rationally"]
+    answer: "C"
+  - id: 2
+    category: "Python"
+    question: "What is the result of the expression 10 // 3 in Python?"
+    options: ["A) 3.333", "B) 3", "C) 1", "D) 0"]
+    answer: "B"
+  - id: 3
+    category: "NLP"
+    question: "Which phase of NLP involves breaking a source of character strings into units called tokens?"
+    options: ["A) Syntactic Analysis", "B) Semantic Analysis", "C) Lexical Analysis", "D) Pragmatic Analysis"]
+    answer: "C"
+  - id: 4
+    category: "K-Means"
+    question: "What does the K in K-means represent?"
+    options: ["A) Iterations", "B) Features", "C) Number of clusters", "D) Distance"]
+    answer: "C"
+  - id: 5
+    category: "Bayes"
+    question: "In Bayes' Theorem, what is the Prior probability?"
+    options: ["A) Probability after evidence", "B) Initial belief before evidence", "C) The evidence itself", "D) Test accuracy"]
+    answer: "B"
+subjective:
+  - question: "Explain the difference between 'Thinking Humanly' and 'Acting Humanly'."
+    answer: "Acting Humanly focuses on the Turing Test (fooling humans). Thinking Humanly focuses on cognitive modeling (replicating brain processes)."
