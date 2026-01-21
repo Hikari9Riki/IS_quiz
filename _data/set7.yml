@@ -1,0 +1,30 @@
+title: "Mock Final - Set 7 (Key Concepts)"
+mcq:
+  - id: 1
+    category: "Philosophy of AI"
+    question: "A 'Rational Agent' is defined as a system that acts to:"
+    options: ["A) Imitate emotions", "B) Achieve best outcome based on info", "C) Follow commands", "D) Pass Turing Test"]
+    answer: "B"
+  - id: 2
+    category: "Philosophy of AI"
+    question: "The 'Alignment Problem' refers to:"
+    options: ["A) Robot parts fitting", "B) Ensuring AI goals match human values", "C) Software bugs", "D) Internet speed"]
+    answer: "B"
+  - id: 3
+    category: "K-Means"
+    question: "Which is a limitation of K-means?"
+    options: ["A) Slow on small data", "B) Struggles with non-spherical shapes", "C) Requires labels", "D) Text only"]
+    answer: "B"
+  - id: 4
+    category: "NLP"
+    question: "Syntactic Analysis is also commonly referred to as:"
+    options: ["A) Tokenizing", "B) Parsing", "C) Stemming", "D) Lemmatizing"]
+    answer: "B"
+  - id: 5
+    category: "Bayesian Probability"
+    question: "Which field uses Bayesian probability to understand customer opinions?"
+    options: ["A) Robotics", "B) Sentiment Analysis", "C) Physics", "D) Hardware"]
+    answer: "B"
+subjective:
+  - question: "Explain the difference between Supervised and Unsupervised Learning."
+    answer: "Supervised Learning uses labeled data (input-output pairs). Unsupervised Learning finds hidden patterns in unlabeled data (e.g., clustering)."
