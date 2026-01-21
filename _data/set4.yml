@@ -1,0 +1,30 @@
+title: "Mock Final - Set 4 (Python & Clustering)"
+mcq:
+  - id: 1
+    category: "Python"
+    question: "Which operator is used for exponentiation (power) in Python?"
+    options: ["A) ^", "B) *", "C) **", "D) //"]
+    answer: "C"
+  - id: 2
+    category: "K-Means"
+    question: "In K-means, 'Intra-cluster distance' refers to:"
+    options: ["A) Distance between centroids", "B) Distance between points in the same cluster", "C) Distance to origin", "D) Distance between clusters"]
+    answer: "B"
+  - id: 3
+    category: "Philosophy of AI"
+    question: "The first 'AI Winter' (1966–1973) was primarily caused by:"
+    options: ["A) Lack of electricity", "B) Overpromising and combinatorial explosion", "C) Internet invention", "D) Success of neural networks"]
+    answer: "B"
+  - id: 4
+    category: "Python"
+    question: "Which data type is used to store an ordered, immutable collection of items?"
+    options: ["A) List", "B) Tuple", "C) Dictionary", "D) Set"]
+    answer: "B"
+  - id: 5
+    category: "K-Means"
+    question: "In machine learning, clustering is classified as what type of learning?"
+    options: ["A) Supervised", "B) Unsupervised", "C) Reinforcement", "D) Semi-supervised"]
+    answer: "B"
+subjective:
+  - question: "Explain the step-by-step process of the K-means algorithm."
+    answer: "1. Initialize K random centroids. 2. Assign each point to the nearest centroid. 3. Update centroids by calculating the mean of assigned points. 4. Repeat until convergence."
