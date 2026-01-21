@@ -1,0 +1,30 @@
+title: "Mock Final - Set 8 (Logic & Structure)"
+mcq:
+  - id: 1
+    category: "Python"
+    question: "How are code blocks defined in Python?"
+    options: ["A) Curly braces {}", "B) Semicolons ;", "C) Indentation", "D) Parentheses ()"]
+    answer: "C"
+  - id: 2
+    category: "Naive Bayes"
+    question: "Which is a key advantage of Naive Bayes?"
+    options: ["A) Models complex relationships", "B) Requires massive data", "C) Fast and easy prediction", "D) Never makes mistakes"]
+    answer: "C"
+  - id: 3
+    category: "ANN"
+    question: "What is the mathematical goal of the learning process in an ANN?"
+    options: ["A) Data compression", "B) Mathematical optimization", "C) Sorting inputs", "D) Randomizing weights"]
+    answer: "B"
+  - id: 4
+    category: "Backpropagation"
+    question: "An 'Epoch' in training refers to:"
+    options: ["A) One weight update", "B) One full pass of the entire dataset", "C) Building a neuron", "D) The first node error"]
+    answer: "B"
+  - id: 5
+    category: "Bayesian Probability"
+    question: "Conditional probability P(A|B) is defined only if:"
+    options: ["A) P(A)>0", "B) P(B)>0", "C) P(A)=P(B)", "D) A is subset of B"]
+    answer: "B"
+subjective:
+  - question: "What is the role of the Activation Function?"
+    answer: "It determines if a neuron fires and introduces non-linearity, allowing the network to learn complex patterns."
