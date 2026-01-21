@@ -1,0 +1,30 @@
+title: "Mock Final - Set 6 (Neural Networks)"
+mcq:
+  - id: 1
+    category: "ANN"
+    question: "The Soma (cell body) of a biological neuron corresponds to which part of an artificial neuron?"
+    options: ["A) Input connection", "B) Summation/Node", "C) Output path", "D) Weight"]
+    answer: "B"
+  - id: 2
+    category: "Backpropagation"
+    question: "Gradient Descent is the optimization method used to:"
+    options: ["A) Increase error", "B) Move weights in direction that reduces loss", "C) Add data", "D) Visualize network"]
+    answer: "B"
+  - id: 3
+    category: "Python"
+    question: "Which library is used for high-performance data structures like DataFrames?"
+    options: ["A) NumPy", "B) Pandas", "C) PyTorch", "D) Requests"]
+    answer: "B"
+  - id: 4
+    category: "Backpropagation"
+    question: "If the learning rate is set too high, the network might:"
+    options: ["A) Learn slowly", "B) Overshoot the optimal solution", "C) Be single-layer", "D) Delete data"]
+    answer: "B"
+  - id: 5
+    category: "ANN"
+    question: "Which layer receives data directly from the external environment?"
+    options: ["A) Hidden layer", "B) Output layer", "C) Input layer", "D) Feedback layer"]
+    answer: "C"
+subjective:
+  - question: "What is the Vanishing Gradient Problem?"
+    answer: "When gradients become extremely small during backpropagation (common with Sigmoid), causing early layers to stop learning effectively."
