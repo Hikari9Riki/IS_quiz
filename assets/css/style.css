@@ -1,0 +1,13 @@
+body { font-family: sans-serif; background: #f4f4f4; padding: 20px; line-height: 1.6; }
+.container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+h1, h2 { color: #333; }
+.question-block { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+.options label { cursor: pointer; display: inline-block; padding: 5px 0; }
+button { background: #007bff; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 16px; border-radius: 4px; }
+button:hover { background: #0056b3; }
+.feedback { margin-top: 10px; font-weight: bold; padding: 10px; border-radius: 4px; }
+.feedback.correct { background: #d4edda; color: #155724; }
+.feedback.incorrect { background: #f8d7da; color: #721c24; }
+.reveal-btn { background: #6c757d; margin-top: 10px; }
+.answer-text { margin-top: 10px; background: #e2e3e5; padding: 15px; border-radius: 4px; }
+#score-display { margin-top: 20px; font-size: 1.2em; text-align: center; }
