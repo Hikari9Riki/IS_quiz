@@ -1,0 +1,30 @@
+title: "Mock Final - Set 9 (Advanced Mix)"
+mcq:
+  - id: 1
+    category: "Philosophy of AI"
+    question: "Cognitive psychology views the brain as a(n):"
+    options: ["A) Stimulus-response pattern", "B) Biological muscle", "C) Information-processing device", "D) Abstract entity"]
+    answer: "C"
+  - id: 2
+    category: "Python"
+    question: "In Python, what is the default index for the first element in a list?"
+    options: ["A) 1", "B) -1", "C) 0", "D) None"]
+    answer: "C"
+  - id: 3
+    category: "K-Means"
+    question: "Why is data standardization important before K-means?"
+    options: ["A) Faster code", "B) Prevents large-range features from dominating", "C) Converts strings to numbers", "D) Removes empty rows"]
+    answer: "B"
+  - id: 4
+    category: "Backpropagation"
+    question: "Which of the following is a common Loss Function?"
+    options: ["A) Euclidean Distance", "B) Mean Squared Error (MSE)", "C) Inertia", "D) Word Count"]
+    answer: "B"
+  - id: 5
+    category: "Naive Bayes"
+    question: "If a model assigns 0 probability to a class, it means:"
+    options: ["A) Class is certain", "B) Model cannot predict for that instance", "C) Model is 100% accurate", "D) Data is balanced"]
+    answer: "B"
+subjective:
+  - question: "Compare a Python List and a Tuple."
+    answer: "Lists are mutable (can change, used []) while Tuples are immutable (cannot change, used ()). Lists are for changing data; Tuples for constant data."
