@@ -1,0 +1,190 @@
+title: "Philosophy of AI Quiz"
+mcq:
+  - id: 1
+    question: "Which approach to AI focuses on machines that can fool humans into thinking they are human through conversation and behavior?"
+    options:
+      - A) Thinking Humanly
+      - B) Thinking Rationally
+      - C) Acting Humanly
+      - D) Acting Rationally
+    answer: "C"
+  - id: 2
+    question: "Cognitive modeling is the primary focus of which AI definition?"
+    options:
+      - A) Acting Rationally
+      - B) Thinking Humanly
+      - C) Acting Humanly
+      - D) Thinking Rationally
+    answer: "B"
+  - id: 3
+    question: "According to the 'Laws of Thought' approach, AI uses which of the following to make correct inferences?"
+    options:
+      - A) Emotional intelligence
+      - B) Logic and mathematical reasoning
+      - C) Trial and error
+      - D) Human intuition
+    answer: "B"
+  - id: 4
+    question: "A 'Rational Agent' is defined as a system that acts to:"
+    options:
+      - A) Imitate human emotions perfectly
+      - B) Achieve the best outcome based on available information
+      - C) Follow every human command without question
+      - D) Pass the Turing Test consistently
+    answer: "B"
+  - id: 5
+    question: "Which foundation of AI asks the question, 'How does the mind arise from a physical brain?'"
+    options:
+      - A) Mathematics
+      - B) Neuroscience
+      - C) Philosophy
+      - D) Psychology
+    answer: "C"
+  - id: 6
+    question: "Who is considered the 'Father of AI' and defined it as a mechanical system performing actions deemed intelligent in 1956?"
+    options:
+      - A) Alan Turing
+      - B) Elaine Rich
+      - C) John McCarthy
+      - D) Azizi Ab Aziz
+    answer: "C"
+  - id: 7
+    question: "Which field provides the mathematical foundations for AI through formal logic, probability, and computation theory?"
+    options:
+      - A) Economics
+      - B) Linguistics
+      - C) Mathematics
+      - D) Computer Engineering
+    answer: "C"
+  - id: 8
+    question: "The concept of utility maximization for rational decision-making under uncertainty comes from which field?"
+    options:
+      - A) Philosophy
+      - B) Psychology
+      - C) Economics
+      - D) Control Theory
+    answer: "C"
+  - id: 9
+    question: "Cognitive psychology views the brain as a(n):"
+    options:
+      - A) Stimulus-response pattern
+      - B) Biological muscle
+      - C) Information-processing device
+      - D) Abstract entity
+    answer: "C"
+  - id: 10
+    question: "In the Turing Test, who attempts to determine which participant is the computer and which is the human?"
+    options:
+      - A) The Developer
+      - B) The Interrogator
+      - C) The Rational Agent
+      - D) The Actuator
+    answer: "B"
+  - id: 11
+    question: "In which year was AI officially born at the Dartmouth Conference?"
+    options:
+      - A) 1943
+      - B) 1950
+      - C) 1956
+      - D) 1966
+    answer: "C"
+  - id: 12
+    question: "The first 'AI Winter' (1966–1973) was primarily caused by:"
+    options:
+      - A) Lack of electricity
+      - B) Overpromising and combinatorial explosion
+      - C) The invention of the internet
+      - D) Success of neural networks
+    answer: "B"
+  - id: 13
+    question: "Which AI era was dominated by knowledge-based systems like DENDRAL and MYCIN?"
+    options:
+      - A) Early Enthusiasm
+      - B) Big Data Era
+      - C) Expert Systems
+      - D) Deep Learning
+    answer: "C"
+  - id: 14
+    question: "What characterizes the 'Big Data Era' (2001–Present)?"
+    options:
+      - A) Hand-coded knowledge is prioritized
+      - B) Data became more important than algorithms
+      - C) Logic is the only focus
+      - D) Computing power stopped growing
+    answer: "B"
+  - id: 15
+    question: "Which is a characteristic of Natural (Human) Intelligence compared to AI?"
+    options:
+      - A) It is easy to replicate
+      - B) It is consistent and documental
+      - C) It is chaotic and keeps on changing
+      - D) It is cheap
+    answer: "C"
+  - id: 16
+    question: "Artificial Intelligence is often considered 'Consistent' while Human Intelligence is:"
+    options:
+      - A) Easy to document
+      - B) Highly predictable
+      - C) Chaotic
+      - D) Cheap to maintain
+    answer: "C"
+  - id: 17
+    question: "Conventional computing paradigms differ from AI because they are based on:"
+    options:
+      - A) Symbolical manipulation
+      - B) Qualitative aspects
+      - C) Numerical manipulation and step-by-step solutions
+      - D) Dynamic representations
+    answer: "C"
+  - id: 18
+    question: "Intelligent Systems are described as a computer-based approach to:"
+    options:
+      - A) Playing video games
+      - B) Decision making
+      - C) Word processing
+      - D) Manual labor
+    answer: "B"
+  - id: 19
+    question: "The 'Alignment Problem' in AI risks refers to:"
+    options:
+      - A) Physical robot parts not fitting
+      - B) Ensuring AI goals match human values
+      - C) Software bugs in calculations
+      - D) Slow internet speeds
+    answer: "B"
+  - id: 20
+    question: "Which of the following is considered a serious risk of AI?"
+    options:
+      - A) Increased productivity
+      - B) Medical breakthroughs
+      - C) Lethal autonomous weapons
+      - D) Accelerated research
+    answer: "C"
+
+subjective:
+  - question: "Explain the difference between 'Thinking Humanly' and 'Acting Humanly' in AI definitions."
+    answer: "'Acting Humanly' focuses on the Turing Test approach (fooling a human). 'Thinking Humanly' focuses on cognitive modeling (replicating actual human thought processes)."
+  - question: "Describe the significance of the 1956 Dartmouth Conference in AI history."
+    answer: "It is where AI was officially born. John McCarthy coined the term 'Artificial Intelligence' there."
+  - question: "What is a 'Rational Agent,' and how does 'Rationality' differ from 'Omniscience'?"
+    answer: "A Rational Agent acts to achieve the best outcome based on available info. It is not Omniscient (all-knowing); it maximizes expected performance, not guaranteed future success."
+  - question: "Compare Artificial Intelligence with Natural (Human) Intelligence based on the characteristics of consistency and cost."
+    answer: "AI is consistent, cheap, and easy to replicate. Natural Intelligence is chaotic, expensive to maintain, and difficult to document."
+  - question: "What were the primary causes of the 'Reality Check' period (1966–1973), also known as the first AI Winter?"
+    answer: "Overpromising, the combinatorial explosion (problems getting too hard too fast), and the Lighthill report which cut funding."
+  - question: "Discuss the philosophical conflict between 'Dualism' and 'Materialism' as it relates to the foundation of Artificial Intelligence."
+    answer: "Dualism sees the mind as non-physical. Materialism sees the mind as a product of the physical brain. AI relies on Materialism—assuming mind processes can be replicated physically."
+  - question: "Explain why the 'Acting Rationally' (Rational Agent) approach is often preferred over the 'Thinking Humanly' (Cognitive Modeling) approach in modern AI development."
+    answer: "Thinking Humanly requires understanding the brain (which is hard). Acting Rationally focuses on results (math/engineering) rather than mimicking biology perfectly."
+  - question: "How did the field of Economics contribute to the foundations of Artificial Intelligence?"
+    answer: "It provided theories of Utility (representing preferences) and decision-making under uncertainty."
+  - question: "Describe the 'Neuroscience' foundation of AI and the primary question it seeks to answer regarding the mind."
+    answer: "Neuroscience asks 'How do brains process information?' and provides the evidence that thought arises from physical matter (neurons/synapses)."
+  - question: "What characterizes the 'Expert Systems' era of AI (1969–1979), and how did it differ from the earlier 'Enthusiasm' period?"
+    answer: "Expert Systems used domain-specific knowledge (rules) rather than the general-purpose search algorithms of the Enthusiasm period."
+  - question: "Explain the major shift in AI philosophy that occurred during the 'Big Data Era' (2001–Present)."
+    answer: "The focus shifted from complex algorithms to massive data. 'Data is the new oil'—simple models with huge data often beat complex models with little data."
+  - question: "Discuss the 'Alignment Problem' and why it is considered a significant ethical risk in Artificial Intelligence."
+    answer: "The risk that an AI's goals won't match human values, potentially causing it to pursue goals in harmful or unethical ways."
+  - question: "Contrast 'AI Computing' with 'Conventional Computing' based on the characteristics of solution methods and data representation."
+    answer: "Conventional computing = Numerical, step-by-step, rigid. AI Computing = Symbolic, heuristic, qualitative, and handles uncertainty."
