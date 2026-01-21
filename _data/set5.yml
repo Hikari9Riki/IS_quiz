@@ -1,0 +1,30 @@
+title: "Mock Final - Set 5 (NLP & Bayes)"
+mcq:
+  - id: 1
+    category: "NLP"
+    question: "Which phase of NLP discovers the actual effect or intent of a sentence in a specific context?"
+    options: ["A) Syntactic Analysis", "B) Semantic Analysis", "C) Pragmatic Analysis", "D) Lexical Analysis"]
+    answer: "C"
+  - id: 2
+    category: "Bayesian Probability"
+    question: "If P(A|B) = P(A), it means events A and B are:"
+    options: ["A) Dependent", "B) Independent", "C) Equal", "D) Mutually exclusive"]
+    answer: "B"
+  - id: 3
+    category: "Naive Bayes"
+    question: "The Likelihood in Naive Bayes is represented as:"
+    options: ["A) P(Class)", "B) P(Data | Class)", "C) P(Class | Data)", "D) P(Data)"]
+    answer: "B"
+  - id: 4
+    category: "NLP"
+    question: "Which NLP task identifies specific names of people, organizations, or locations?"
+    options: ["A) POS Tagging", "B) Named Entity Recognition (NER)", "C) Sentiment Analysis", "D) Summarization"]
+    answer: "B"
+  - id: 5
+    category: "Bayesian Probability"
+    question: "A probability of 0 means the event is:"
+    options: ["A) Certain", "B) Impossible", "C) Likely", "D) Random"]
+    answer: "B"
+subjective:
+  - question: "Define Bayes' Theorem and its components."
+    answer: "P(A|B) = (P(B|A) * P(A)) / P(B). Components: Posterior, Likelihood, Prior, and Evidence."
